@@ -1,0 +1,22 @@
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+relative_permalinks: true
+
+# Setup
+title:               Codin.vn
+tagline:             'Khoa học máy tính cho người Việt'
+description:         'Just wait...'
+url:                 http://www.codin.vn
+baseurl:             ''
+paginate:            10
+
+# About/contact
+author:
+  name:              Hai Dang
+  url:               https://github.com/hans89
+  email:             dhhai.uns@gmail.com
+
+# Custom vars
+version:             0.0.1

@@ -1,54 +1,53 @@
 # Site wide configuration
 
-title: Codin.vn
-locale: en_US
-description: Khoa học Máy tính cho người Việt
-logo: site-logo.png
-search: true
-url: http://codin.vn
+title:            Hai Dang's babbling
+locale:           en_US
+url:              http://www.codin.vn
+
 
 # Jekyll configuration
 
 permalink:   /:categories/:title/
 markdown:    kramdown
-highlighter: pygments
+highlighter: rouge
 sass:
   sass_dir: _sass
   style: compressed
 gems:
   - jekyll-sitemap
+  - jekyll-gist
 
 kramdown:
   auto_ids: true
   footnote_nr: 1
   entity_output: as_char
-  toc_levels: 1..2
-  use_coderay: false
+  toc_levels: 1..6
+  enable_coderay: false
 
-include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "log", 
-          "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", 
-          "*.sublime-workspace", "test", "spec", "Gruntfile.js", 
-          "package.json", "node_modules", "Gemfile", "Gemfile.lock", 
-          "LICENSE", "README.md", "vendor"]
+
+# Octopress
+
+# Default extensions
+post_ext: md
+page_ext: md
+
+# Found in _templates/
+post_layout: post
+page_layout: page
+
+# Format titles with titlecase?
+titlecase: true
 
 
 # Site owner
 owner:
-  name: Codin.vn
+  name: Hai Dang
   avatar: bio-photo.jpg
-  email: you@email.com
+  bio: "Just an average person"
+  email: "dhhai.uns@gmail.com"
   disqus-shortname:
   twitter: #username
-  facebook: #username
-  github: #username
-  stackexchange: #http://stackoverflow.com/users/123456/username
-  linkedin: #username
-  instagram: #username
-  flickr: #username
-  tumblr: #username
-  pinterest: #username
-  weibo: #userid
+  facebook: "dhhai89"
   google:
     plus: #username
     analytics:
@@ -56,3 +55,22 @@ owner:
     ad-client:
     ad-slot:
   bing-verify:
+  github: "hans89"
+  stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
+  linkedin: #username
+  xing: #username
+  instagram: "dhhai"
+  lastfm: #username
+  tumblr: #username
+  pinterest: #username
+  foursquare: #username
+  steam: #username
+  dribbble: #username
+  youtube: #username
+  soundcloud: #username
+  weibo: #username
+  flickr: #username
+  codepen: #username
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]

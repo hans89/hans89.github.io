@@ -3,6 +3,9 @@ _gh_pages
 _site
 .ruby-version
 .sass-cache
+codekit-config.json
+_asset_bundler_cache
+.jekyll-metadata
 
 # Numerous always-ignore extensions
 *.diff

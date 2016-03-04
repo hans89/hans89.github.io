@@ -3,14 +3,8 @@
 - title: About
   url: /about/
 
-- title: Articles
-  url: /articles/
+- title: Posts
+  url: /posts/
 
-- title: Blog
-  url: /blog/
-
-- title: Theme Setup
-  url: /theme-setup/
-
-- title: Search
-  url: /search/
+- title: Tiếng Việt
+  url: /vietnamese/

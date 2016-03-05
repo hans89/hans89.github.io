@@ -36,7 +36,7 @@
       </article>
     {% endfor %}
   </div><!-- /#index -->
-  {% if paginator.total_pages > 1 %}
+  {% if paginator.total_pages > 0 %}
   <div class="pagination">
     {% if paginator.previous_page %}
       <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>

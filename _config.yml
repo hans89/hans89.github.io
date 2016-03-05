@@ -26,7 +26,7 @@ kramdown:
   enable_coderay: false
 
 paginate: 1
-paginate_path: "/posts/:num/"
+paginate_path: "/posts/page:num/"
 
 
 # Octopress

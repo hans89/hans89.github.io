@@ -29,9 +29,16 @@
       {% endif %}
       <article>
         {% if post.link %}
-          <h2 class="link-post"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-link"></i></a></h2>
+          <li class="link-post">
+            <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> 
+            <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-link"></i></a>
+            <span class="date">{{ post.date }}</span>
+          </li>
         {% else %}
-          <h2><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+          <li>
+            <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+            <span class="date">{{ post.date }}</span>
+          </li>
         {% endif %}
       </article>
     {% endfor %}

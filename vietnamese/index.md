@@ -1,5 +1,7 @@
 ---
-layout: post-index
-title: Tiếng Việt
-excerpt: "A List of Posts"
+layout: cat
+title: Blog Tiếng Việt
+excerpt: "Blog Tiếng Việt"
+category: vnblog
+
 ---

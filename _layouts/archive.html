@@ -29,16 +29,16 @@
       {% endif %}
       <article>
         {% if post.link %}
-          <li class="link-post">
+          <h4 class="link-post">
             <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> 
             <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-link"></i></a>
-            <span class="date">{{ post.date }}</span>
-          </li>
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+          </h4>
         {% else %}
-          <li>
+          <h4>
             <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-            <span class="date">{{ post.date }}</span>
-          </li>
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+          </h4>
         {% endif %}
       </article>
     {% endfor %}

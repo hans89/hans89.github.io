@@ -1,9 +1,7 @@
 ---
-layout: post-index
+layout: archive
 title: {{ title }}
 permalink:
 modified:
 excerpt:
-image:
-  feature:
 ---

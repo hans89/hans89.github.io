@@ -16,7 +16,6 @@ sass:
 gems:
   - jekyll-sitemap
   - jekyll-gist
-  - jekyll-paginate
 
 kramdown:
   auto_ids: true
@@ -24,10 +23,6 @@ kramdown:
   entity_output: as_char
   toc_levels: 1..6
   enable_coderay: false
-
-paginate: 1
-paginate_path: "/posts/page:num/"
-
 
 # Octopress
 

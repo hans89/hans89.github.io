@@ -4,6 +4,9 @@ title:            Hai Dang's babbling
 locale:           en_US
 url:              http://www.codin.vn
 
+# Extra config
+dateformat: "%B %d, %Y"
+related_posts_limit: 5
 
 # Jekyll configuration
 

@@ -1,0 +1,13 @@
+<article>
+  <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: site.dateformat }}</time>
+   » 
+  {% if post.link %}
+    <h5 class="link-post" style="display: inline;">
+      <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> 
+      <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-link"></i></a>
+    </h5>
+  {% else %}
+    <h5 style="display: inline;">
+      <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h5>
+  {% endif %}
+</article>

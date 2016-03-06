@@ -574,14 +574,6 @@ $button-size: 1.5rem;
 .social-share {
   margin-bottom: 0px + $doc-line-height;
   margin-bottom: 0rem + ($doc-line-height / $doc-font-size);
-  ul, li {
-  	margin: 0;
-  	padding: 0;
-  	list-style: none;
-  }
-  li {
-  	display: inline-block;
-  }
   $social:
   (facebook, $facebook-color),
   (flickr, $flickr-color),
@@ -601,7 +593,6 @@ $button-size: 1.5rem;
     }
   }
   a {
-	  display: block;
 	  padding: 8px 20px;
 	  text-decoration: none !important;
 	  text-transform: uppercase;
@@ -737,4 +728,38 @@ $button-size: 1.5rem;
 }
 #goog-wm-sb {
 	@extend .btn;
+}
+
+/* 
+	tag_box 
+	=========================================================================== */
+
+.tag_box {
+	list-style: none;
+	margin:10px;
+	padding:5px 0 ;
+	overflow:hidden;
+}
+.tag_box li {
+	line-height:28px;
+}
+.tag_box.inline li {
+	float:left;
+}
+.tag_box li a {
+	padding: 3px 6px;
+	margin: 2px;
+	background: #eee;
+	color:#005F6B;
+	border-radius: 3px;
+	text-decoration: none;
+}
+.tag_box li a span{
+	vertical-align:super;
+	font-size:0.8em;
+}
+.tag_box a.active {
+	background:#57A957;
+	border:1px solid #4C964D;
+	color:#FFF;
 }
